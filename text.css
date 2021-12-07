@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.mainBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(10, 10, 10);
+}
+p 
+{
+    color: #A4FC52;
+}
+.neonText 
+{
+    padding: 1rem 1rem;
+    text-align: center;
+}
+.neonText h1
+{
+font-size: 3rem;
+text-align: center;
+font-weight: bold;
+animation: light 2s ease-in-out infinite alternate;
+}
+@keyframes light
+{
+    from{
+        color:  rgb(10, 10, 10);
+        
+        text-shadow: 0 0 10px  #00fff2,
+        0 0 20px  #00fff2,0 0 30px  #00fff2,
+        0 0 40px  #00fff2,0 0 50px  #00fff2,
+        0 0 60px  #00fff2,0 0 70px  #00fff2,
+        0 0 80px  #00fff2,0 0 90px  #00fff2,
+        
+    }
+    to{
+        color: lightgray;
+        text-shadow: 0 0 20px  #00fff2,
+        0 0 30px  #00fff2,0 0 40px  #00fff2,
+        0 0 50px  #00fff2,0 0 60px  #00fff2,
+        0 0 70px  #00fff2,0 0 80px  #00fff2,
+        0 0 90px  #00fff2;
+    }
+}

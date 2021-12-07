@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foto</title>
+    <link rel='stylesheet' href='foto.css'> 
+</head>
+<body>
+    <img src='nnh.webp' class='fake'>
+    <div id='pg'></div>
+    <script type="text/javascript">
+        const pg = document.getElementById('pg');
+        function randomColor(){
+            return Math.floor(Math.random()* 255);
+        }
+        pg.addEventListener('click', () => {
+        pg.style.backgroundColor = 'rgba('+ randomColor()+','+randomColor()+','+randomColor()+')'
+        })
+    </script>
+</body>
+</html>
